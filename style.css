@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Homemade+Apple&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 98vw;
+  background: #a73737; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #7a2828,
+    #a73737
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #7a2828,
+    #a73737
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 10px solid rgb(219, 188, 188);
+}
+
+.container {
+  padding: 9rem;
+}
+
+#text {
+  text-align: center;
+  font-family: "Homemade Apple", cursive;
+  font-size: 250%;
+  font-weight: lighter;
+  color: rgb(219, 188, 188);
+}
+
+#author {
+  float: right;
+  padding-right: 10%;
+  font-family: "Castoro", serif;
+  font-size: 250%;
+}
+
+@media screen and (max-width: 600px) {
+  #text {
+    text-align: center;
+    font-family: "Homemade Apple", cursive;
+    font-size: 125%;
+    font-weight: lighter;
+    color: rgb(219, 188, 188);
+    margin: 10px;
+  }
+
+  #author {
+    float: right;
+    padding-right: 10%;
+    font-family: "Castoro", serif;
+    font-size: 125%;
+  }
+  .container {
+    padding: 10rem 3rem;
+  }
+}

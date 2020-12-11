@@ -8,20 +8,10 @@
 body {
   min-height: 100vh;
   min-width: 98vw;
-  background: #a73737; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #7a2828,
-    #a73737
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #7a2828,
-    #a73737
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, #7a2828, #a73737);
   border: 10px solid rgb(219, 188, 188);
+  border-radius: 0.5%;
 }
-
 .container {
   padding: 9rem;
 }
@@ -45,7 +35,7 @@ body {
   #text {
     text-align: center;
     font-family: "Homemade Apple", cursive;
-    font-size: 125%;
+    font-size: 100%;
     font-weight: lighter;
     color: rgb(219, 188, 188);
     margin: 10px;
@@ -55,9 +45,40 @@ body {
     float: right;
     padding-right: 10%;
     font-family: "Castoro", serif;
-    font-size: 125%;
+    font-size: 100%;
   }
   .container {
-    padding: 10rem 3rem;
+    padding: 4rem 0rem;
   }
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.alert.warning {
+  background-color: #ff9800;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+#visible {
+  display: none;
 }

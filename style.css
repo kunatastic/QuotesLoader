@@ -13,13 +13,13 @@ body {
   border-radius: 0.5%;
 }
 .container {
-  padding: 9rem;
+  padding: 5rem;
 }
 
 #text {
   text-align: center;
   font-family: "Homemade Apple", cursive;
-  font-size: 250%;
+  font-size: 200%;
   font-weight: lighter;
   color: rgb(219, 188, 188);
 }
@@ -35,7 +35,7 @@ body {
   #text {
     text-align: center;
     font-family: "Homemade Apple", cursive;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: lighter;
     color: rgb(219, 188, 188);
     margin: 10px;
@@ -48,7 +48,7 @@ body {
     font-size: 100%;
   }
   .container {
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
   }
 }
 
@@ -81,4 +81,35 @@ body {
 }
 #visible {
   display: none;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 1000ms ease-in-out infinite;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 1000ms ease-in-out infinite;
+  }
 }

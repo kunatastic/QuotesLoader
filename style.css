@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Homemade+Apple&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:ital,wght@0,300;1,100&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,44 +8,49 @@
 body {
   min-height: 100vh;
   min-width: 98vw;
-  background: linear-gradient(to bottom, #7a2828, #a73737);
-  border: 10px solid rgb(219, 188, 188);
-  border-radius: 0.5%;
+  /* background: linear-gradient(to bottom, #7a2828, #a73737); */
+  /* border: 10px solid rgb(219, 188, 188); */
+  border: 10px solid white;
+  /* border-radius: 0.5%; */
 }
+
 .container {
-  padding: 5rem;
+  padding: 10rem 2rem;
 }
 
 #text {
   text-align: center;
   font-family: "Homemade Apple", cursive;
-  font-size: 170%;
+  font-size: calc(9px + (24 - 16) * (100vw - 320px) / (1920 - 320));
   font-weight: lighter;
-  color: rgb(219, 188, 188);
+  /* color: rgb(219, 188, 188); */
+  line-height: 3;
 }
 
 #author {
   float: right;
-  padding-right: 10%;
-  font-family: "Castoro", serif;
-  font-size: 250%;
+  padding-top: 3%;
+  padding-right: 12%;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(5px + (24 - 16) * (100vw - 320px) / (1920 - 320));
 }
 
 @media screen and (max-width: 600px) {
   #text {
     text-align: center;
     font-family: "Homemade Apple", cursive;
-    font-size: 120%;
+    font-size: calc(11px + (24 - 16) * (100vw - 320px) / (1920 - 320));
     font-weight: lighter;
-    color: rgb(219, 188, 188);
-    margin: 10px;
+    /* color: rgb(219, 188, 188); */
+    padding: 4rem 2rem 0 2rem;
+    line-height: 2.5;
   }
 
   #author {
     float: right;
     padding-right: 10%;
     font-family: "Castoro", serif;
-    font-size: 100%;
+    font-size: calc(13px + (24 - 16) * (100vw - 320px) / (1920 - 320));
   }
   .container {
     padding: 2rem 0rem;
@@ -83,8 +88,21 @@ body {
   display: none;
 }
 
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 1000ms ease-in-out infinite;
+.github-corner .octo-arm {
+  animation: octocat-wave 2000ms ease-in-out infinite;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: calc(23px + (24 - 16) * (100vw - 320px) / (1920 - 320));
+  background-color: rgba(238, 18, 18, 0.849);
+  z-index: -1;
+  text-align: center;
+  font-size: calc(13px + (24 - 16) * (100vw - 320px) / (1920 - 320));
+  font-family: "Poppins", sans-serif;
 }
 
 @keyframes octocat-wave {
@@ -110,6 +128,12 @@ body {
   }
 
   .github-corner .octo-arm {
-    animation: octocat-wave 1000ms ease-in-out infinite;
+    animation: octocat-wave 2000ms ease-in-out infinite;
   }
 }
+
+/* nav {
+  border: 2px solid black;
+  float: center;
+  position: absolute;
+} */

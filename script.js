@@ -27,6 +27,12 @@ function extract(quotes) {
 }
 
 function process(node, element, item) {
+  if (item == "~null") {
+    item = "~ Anonymous";
+  }
+  if (node == "author") {
+    document.title = "Quote by " + item;
+  }
   const text = document.getElementById(node);
   var textNode = document.createElement(element);
   var textdata = document.createTextNode(item);

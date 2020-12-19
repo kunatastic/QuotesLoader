@@ -4,18 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is a dynamic Quote Loader with an inbuilt Google Search Option. New Quotes is being displayed at every new Render. Over 3k+ Quotes can be viewed ">
+  <meta name=”robots” content=”index, follow”>
+  <meta property="og:type" content="Quotes" />
+  <meta property="og:description"
+    content="This is a dynamic Quote Loader with an inbuilt Google Search Option. New Quotes is being displayed at every new Render. Over 3k+ Quotes can be viewed " />
+  <meta property="og:image" content="Logo" />
   <title>Have a nice day</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./main.css">
-  <link rel="icon" href="./Logo.jpg" type="image/icon type">
+  <link rel="icon" href="./Logo.jpg" type="image/icon type" alt="Logo of QuotesLoader">
 </head>
 
-<body id="body" onload="check()">
 
+
+<body id="body" onload="check()">
   <!-- Logo -->
   <a href="https://github.com/kunatastic/QuotesLoader" class="github-corner" aria-label="View source on GitHub">
-    <svg width="100" height="100" viewBox="0 0 250 250"
-      style="fill:white; color:#1d1d1d; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
       <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
       <path
         d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
@@ -35,15 +42,7 @@
   <!-- Alert on network Issues -->
 
   <!-- Navigation Search -->
-  <!-- <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-
-    <input autocomplete="on" class="form-control search" name="q" placeholder="Search in example.com"
-      required="required" type="text">
-    <button class="button" type="submit">Search</button>
-  </form> -->
-
   <form action="https://www.google.com/search" class="search-bar" method="get" name="searchform" target="_blank">
-
     <!-- <input required> -->
     <input autocomplete="off" class="form-control search" name="q" placeholder="Search Google or type a URL"
       required="required" type="search" oninvalid="none">
@@ -51,7 +50,6 @@
       <span>Search</span>
     </button>
   </form>
-
   <!-- Navigation Search -->
 
   <!-- Quotes Loader -->
@@ -63,7 +61,6 @@
 
   <!-- Footer -->
   <footer>
-
     Code is poetry
   </footer>
   <!-- Footer -->

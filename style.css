@@ -18,6 +18,17 @@ body {
   padding: 10rem 2rem;
 }
 
+svg {
+  fill: white;
+  color: #1d1d1d;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+  height: 100px;
+  width: 100px;
+}
+
 #text {
   text-align: center;
   font-family: "Homemade Apple", cursive;

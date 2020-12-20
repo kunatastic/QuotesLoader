@@ -8,9 +8,11 @@ const search = async () => {
     document.getElementById("visible").style.display = "block";
   }
 };
+
 function check() {
   if (localStorage.getItem("quotes") == null) {
     search();
+    console.log("Fetched");
   } else {
     var retrievedObject = localStorage.getItem("quotes");
     var retrievedObject = JSON.parse(retrievedObject);
@@ -22,8 +24,8 @@ function extract(quotes) {
   let length = quotes.length;
   let index = Math.floor(Math.random() * length);
   let quote = quotes[index];
-  process("author", "h2", "~" + quote.author);
   process("text", "h1", quote.text);
+  process("author", "h2", "~" + quote.author);
 }
 
 function process(node, element, item) {

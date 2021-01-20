@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:ital,wght@0,300;1,100&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:ital,wght@0,300;1,100&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Major+Mono+Display&family=Montserrat&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Monoton&display=swap");
+
+:root {
+  --font-text: "Hachi Maru Pop", cursive;
+  --font-author: "Hachi Maru Pop", cursive;
+  --font-footer: "Monoton", cursive;
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +20,7 @@ body {
   /* border: 10px solid rgb(219, 188, 188); */
   border: 10px solid white;
   /* border-radius: 0.5%; */
+  overflow: hidden;
 }
 
 .container {
@@ -40,8 +49,8 @@ svg {
 
 #text {
   text-align: center;
-  font-family: "Homemade Apple", cursive;
-  font-size: calc(9px + (24 - 16) * (100vw - 320px) / (1920 - 320));
+  font-family: var(--font-text);
+  font-size: calc(10px + (24 - 16) * (100vw - 320px) / (1920 - 320));
   font-weight: lighter;
   /* color: rgb(219, 188, 188); */
   line-height: 3;
@@ -51,14 +60,14 @@ svg {
   float: right;
   padding-top: 3%;
   padding-right: 12%;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-author);
   font-size: calc(5px + (24 - 16) * (100vw - 320px) / (1920 - 320));
 }
 
 @media screen and (max-width: 600px) {
   #text {
     text-align: center;
-    font-family: "Homemade Apple", cursive;
+    font-family: var(--font-text);
     font-size: calc(11px + (24 - 16) * (100vw - 320px) / (1920 - 320));
     font-weight: lighter;
     /* color: rgb(219, 188, 188); */
@@ -69,7 +78,7 @@ svg {
   #author {
     float: right;
     padding-right: 10%;
-    font-family: "Castoro", serif;
+    font-family: var(--font-author);
     font-size: calc(13px + (24 - 16) * (100vw - 320px) / (1920 - 320));
   }
   .container {
@@ -114,15 +123,19 @@ svg {
 
 footer {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 10px;
   left: 0;
   width: 100%;
-  height: calc(23px + (24 - 16) * (100vw - 320px) / (1920 - 320));
-  background-color: rgba(238, 18, 18, 0.849);
+  height: calc(25px + (24 - 16) * (100vw - 320px) / (1920 - 320));
+  background-color: #ee1212d8;
   z-index: -1;
   text-align: center;
+  /* text-transform: capitalize; */
   font-size: calc(13px + (24 - 16) * (100vw - 320px) / (1920 - 320));
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-footer);
 }
 
 @keyframes octocat-wave {
